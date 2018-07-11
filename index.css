@@ -1,0 +1,182 @@
+.header{
+    background-color:rgb(36,41,46);
+    padding:10px;
+}
+
+.loftLogo{
+    max-height: 25px;
+    max-width: 75px;
+}
+
+.footerBuffer{
+    height: 100px;
+}
+.footer{
+    background-color:rgb(36,41,46);
+    padding:10px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    display: flex; /*    centralise */
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchArea{
+    background-color:rgb(43,49,55);
+    padding:20px;
+    color: white;
+    width: 100vw;
+    height: 40vh;
+    display: flex; /*    centralise */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/github-bg.svg);
+    background-position: center center;
+    background-size: auto 200%;
+/*    background-repeat:no-repeat;*/
+    animation: bg-anim 10s linear infinite alternate;
+}
+
+@keyframes bg-anim {
+    from {background-size: auto 200%;}   
+    to {background-size: auto 10%;}   
+}
+
+.buttonColor{
+    background-color: rgb(43,178,74);
+    color: white;
+    font-weight: 100;
+}
+
+.title1{
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    font-weight: 100;
+    line-height: 1.2;
+}
+
+.title2{
+    font-weight: 100;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    margin-top: 0;
+    line-height: 1.2;
+    color: grey;
+}
+
+/* bootstrap small 576px */
+@media  (min-width: 576px) {
+    .loftLogo{
+        max-height: 40px;
+    }
+    
+    .title1{
+        letter-spacing: 0.3rem;
+        font-size: 2.5rem;
+        margin-bottom: .5rem;
+    }
+
+    .title2{
+        font-size: 1.5rem;
+        margin-top: 2vh;
+    }
+}
+
+.formDiv{
+    max-width: 500px;
+    margin-top: 5vh;
+}
+
+.detailContainer{
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.boxTitle{
+    width: 100%;
+    text-align: left;
+    color: grey;
+}
+
+.generalBox{
+    margin-top: 5vh;
+}
+
+.whiteBox{
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px grey;
+    padding: 10px;
+}
+
+.width100{
+    width: 100%;
+}
+
+.tableCustom td, .tableCustom  th {
+    border: none;
+    padding: 0.2rem;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.key{
+    width: 50%;
+    text-align: left;
+}
+
+.value{
+    text-align: left;
+}
+
+.lowerBoxes{
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.usageIcon{
+    margin-bottom: 3px;
+}
+
+.padding-5{
+    padding: 5px;
+}
+
+.whiteBoxBottom{
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px grey;
+    padding: 10px;
+}
+
+.avatar{
+    max-height: 125px;
+    max-width: 125px;
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* bootstrap small 576px */
+@media  (min-width: 576px) {
+    .key{
+        width: 30%;
+        text-align: left;
+    }
+    
+    .avatar{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+}
